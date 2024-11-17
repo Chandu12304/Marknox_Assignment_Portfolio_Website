@@ -1,0 +1,16 @@
+@import "./vars.css";
+/* root/src\App.module.css */
+.App {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#particles canvas {
+  z-index: 0; /* Change this to 0 or 1 */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

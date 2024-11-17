@@ -1,0 +1,59 @@
+[
+    {
+      "tech_name": "Cpp",
+      "image": "TechStacks/cpp.png"
+    },
+    {
+      "tech_name": "Java",
+      "image": "TechStacks/java.png"
+    },
+    {
+      "tech_name": "Python",
+      "image": "TechStacks/python.png"
+    },
+    {
+      "tech_name": "HTML",
+      "image": "TechStacks/html.png"
+    },
+    {
+      "tech_name": "CSS",
+      "image": "TechStacks/css.png"
+    },
+    {
+      "tech_name": "JavaScript",
+      "image": "TechStacks/js.png"
+    },
+    {
+      "tech_name": "Reactjs",
+      "image": "TechStacks/react.png"
+    },
+    {
+      "tech_name": "Nodejs",
+      "image": "TechStacks/node.png"
+    },
+    {
+      "tech_name": "Firebase",
+      "image": "TechStacks/firebase.png"
+    },
+    {
+      "tech_name": "MongoDB",
+      "image": "TechStacks/mongo.png"
+    },
+    {
+      "tech_name": "MySQL",
+      "image": "TechStacks/mysql.png"
+    },
+    {
+      "tech_name": "GitHub",
+      "image": "TechStacks/git.png"
+    },
+    {
+      "tech_name": "Adobe Illustrator",
+      "image": "TechStacks/AI.png"
+    },
+    {
+      "tech_name": "Figma",
+      "image": "TechStacks/figma.png"
+    }
+  ]
+  

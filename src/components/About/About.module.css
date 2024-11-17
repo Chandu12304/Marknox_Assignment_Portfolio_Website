@@ -1,0 +1,129 @@
+/* root/src/components/About/About.module.css */
+@import "../../vars.css";
+
+.topAbout {
+  position: relative;
+  z-index: 1;
+  margin-top: 104px;
+  display: flex;
+  justify-content: center;
+}
+
+.abtCont {
+  width: 100%;
+  max-width: 1160px;
+  /* for < 900px - 30px */
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Oxanium", sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.line {
+  border-bottom: #98cc45 solid 8px;
+  width: fit-content; /* Width will match h3 content */
+  max-width: 100%; /* Ensures it doesn't overflow */
+  margin: 8px; /* Space between h3 and line */
+}
+.textEditor {
+  width: 100%;
+  background-color: var(--color-codeEditorbg);
+  border-radius: 20px;
+  box-shadow: 0px 2px 100px #59b5b550;
+}
+
+.textHead {
+  height: 55px;
+  width: 100%;
+  background-color: antiquewhite;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+.cir1,
+.cir2,
+.cir3 {
+  margin-top: 19px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+.cir1 {
+  margin-left: 32px;
+  background-color: var(--color-red);
+}
+
+.cir2 {
+  background-color: var(--color-yellow);
+}
+
+.cir3 {
+  background-color: var(--color-green);
+}
+
+.abtContContent {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abtContent {
+  width: 100%;
+  max-width: 1000px;
+  padding-right: 20px;
+  text-align: left;
+}
+.abtP {
+  padding-left: 10px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.9;
+  padding-bottom: 25px;
+  color: var(--color-editorContent);
+}
+.queryDesign,
+.arrowDesign,
+.highlight {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.arrowDesign {
+  color: var(--color-green);
+}
+.queryDesign {
+  color: white;
+}
+
+.highlight {
+  color: var(--color-name);
+}
+.abtLink {
+  color: #db72cd;
+  text-decoration: underline;
+}
+
+@media (max-width: 1150px) {
+  .abtCont {
+    /* for < 900px - 30px */
+    font-size: 1rem;
+    padding: 5px 30px;
+  }
+  .abtContent {
+    overflow-wrap: break-word; /* Ensures long words break and wrap within container */
+    padding: 5px; /* Adds internal padding to keep content away from edges */
+    overflow: hidden; /* Ensures no overflow */
+  }
+  .abtP {
+    text-align: left;
+  }
+}

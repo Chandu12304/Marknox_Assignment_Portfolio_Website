@@ -1,0 +1,33 @@
+[
+    {
+      "project_name": "RRR ( Team lead )",
+      "description": "Led a team of four in the Bit n Build International Hackathon, implementing key frontend features and major backend components.",
+      "img_src": "Projects/Team.png",
+      "repo_link": "https://github.com/Darshan-gowda-m/Bit-N-Build-2024-Binary_innovators"
+    },
+    {
+        "project_name": "Portfolio Website",
+        "description": "Launched an interactive portfolio with Vite and React, showcasing projects, skills, and custom Figma-inspired designs.",
+        "img_src": "Projects/portfolio.png",
+        "repo_link": "https://github.com/Chandu12304/Marknox_Assignment_Portfolio_Website"
+      },
+    {
+      "project_name": "QR generator",
+      "description": "Created a QR generator converting URLs to downloadable images with auto-deletion.",
+      "img_src": "Projects/project1.png",
+      "repo_link": "https://github.com/Chandu12304/QR-Generator-free"
+    },
+    {
+      "project_name": "IEEE UVCE Official website",
+      "description": "Built secure backend with hashed login authentication, Firebase database for admin management.",
+      "img_src": "Projects/project2.png",
+      "repo_link": "https://github.com/Chandu12304/IEEE-UVCE-WebsiteBackend"
+    },
+    {
+      "project_name": "Currency Convertor",
+      "description": "Created a currency converter utilizing an API to provide real-time conversion rates across various currencies.",
+      "img_src": "Projects/project3.png",
+      "repo_link": "https://github.com/Chandu12304/currency-converter"
+    }
+  ]
+  

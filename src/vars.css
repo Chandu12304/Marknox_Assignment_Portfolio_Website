@@ -1,0 +1,21 @@
+/* root/src/vars.css */
+:root {
+  /* Colors */
+  --color-text: #e6e6e6; /* Light text color */
+  --color-bg: #0d2b34; /* Background for hero */
+  --color-name: #6ec4c3;
+  --color-arrow: #e7f17e;
+  --color-highlight: #2c7343;
+  --color-codeEditorbg: #1a1c27;
+  --color-codeEditorHead: #c9c2c2;
+  --color-red: #bd4848;
+  --color-green: #71e131;
+  --color-yellow: #cab635;
+  --color-editorContent: #f5d879;
+  --color-editorLink: #7ee9ff;
+  --color-shape: #16454190;
+  --color-btn: #2c7343;
+  /* Fonts */
+  --font-outfit-stack: "Outfit", Arial, Helvetica, sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+}

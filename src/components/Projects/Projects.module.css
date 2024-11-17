@@ -1,0 +1,230 @@
+.topProject {
+  position: relative;
+  z-index: 1;
+  margin-top: 104px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectMainCont {
+  width: 100%;
+  max-width: 1160px;
+  /* for < 900px - 30px */
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLine {
+  border-bottom: #98cc45 solid 8px;
+  width: fit-content; /* Width will match h3 content */
+  max-width: 100%; /* Ensures it doesn't overflow */
+  margin: 8px; /* Space between h3 and line */
+  margin-bottom: 90px;
+}
+
+.projectContLeft,
+.projectContRight {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.projectContLeft {
+  justify-content: flex-start;
+}
+.projectContRight {
+  justify-content: flex-end;
+}
+.leftProject,
+.rightProject {
+  display: flex;
+  width: 50%;
+}
+.leftProject {
+  justify-content: flex-start;
+  border-right: 2px solid #ffffff;
+}
+.rightProject {
+  justify-content: flex-end;
+  box-shadow: -2px 0 0 0 #ffffff; /* Left side border effect */
+}
+.cirIcon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(236, 231, 231);
+  z-index: 100;
+  border-radius: 50%;
+  left: 49%;
+  top: -2px;
+}
+.projectContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 331px;
+  background: #2a444c;
+  border-radius: 30px;
+  box-shadow: 0px 2px 80px #58747120;
+  animation: float 3s ease-in-out infinite;
+  position: relative; /* Needed for pseudo-element positioning */
+  overflow: hidden; /* Hide overflow for blur effect */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.projectContent:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.projectDescP {
+  padding: 0;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--font-roboto-mono);
+}
+
+/* New styles for the description overlay */
+.projectDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(
+    42,
+    68,
+    76,
+    0.8
+  ); /* Semi-transparent background for description */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 6px;
+  opacity: 0;
+  transition: opacity 0.6s ease; /* Smooth transition for opacity */
+}
+
+.projectContent:hover .projectDescription {
+  opacity: 1; /* Show description on hover */
+}
+
+.projectContent:hover {
+  background: rgba(42, 68, 76, 0.9); /* Slightly darker background on hover */
+}
+
+.repoLink {
+  margin-top: auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+.nameAndLink,
+.projectImg {
+  width: 100%;
+}
+.projectImg {
+  height: 100%;
+}
+
+.nameAndLink {
+  padding: 10px 0px 15px 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0px -10px 8px rgba(102, 193, 170, 0.289);
+}
+.imagePro {
+  box-shadow: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h4 {
+  font-size: 1rem;
+  font-family: var(--font-outfit-stack);
+  color: var(--color-editorContent);
+}
+
+.repoLink {
+  padding: 3px 0px;
+}
+
+.aProj {
+  color: var(--color-text);
+}
+.noBorder {
+  border: none;
+  box-shadow: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(
+      -10px
+    ); /* Increase the distance for a more pronounced effect */
+    opacity: 0.9; /* Slightly fade out */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; /* Return to full opacity */
+  }
+}
+
+@media (max-width: 1150px) {
+  .projectMainCont {
+    padding: 0px;
+  }
+  .projectContLeft,
+  .projectContRight {
+    justify-content: center; /* Center align the project containers */
+  }
+
+  .leftProject,
+  .rightProject {
+    border: none; /* Remove borders */
+    box-shadow: none;
+  }
+
+  .projectDescP,
+  .repoLink {
+    margin: 0;
+    padding: 0px;
+    font-size: 0.8rem;
+  }
+  .cirIcon {
+    display: none; /* Remove the circle icons */
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  .projectContent {
+    margin: 40px auto; /* Center the project content horizontally */
+    height: auto; /* Allow height to adjust for content */
+  }
+}
+
+@media (max-width: 860px) {
+  .projectDescP,
+  .repoLink {
+    margin: 0;
+    padding: 0px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectDescP,
+  .repoLink {
+    margin: 0;
+    padding: 0px;
+    font-size: 0.65rem;
+  }
+}
